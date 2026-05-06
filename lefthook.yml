@@ -1,0 +1,4 @@
+pre-commit:
+  jobs:
+    - name: Unshittify the code
+      run: turbo quality:fix
