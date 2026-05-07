@@ -1,11 +1,16 @@
 {
   "$schema": "https://turborepo.dev/schema.json",
+  "globalPassThroughEnv": ["PLAYWRIGHT_*"],
   "tasks": {
     "build": {
+      "outputs": ["dist/**"],
       "dependsOn": ["^build"]
     },
     "test": {
-      "dependsOn": ["^build"]
+      "outputs": ["playwright-report/**", "test-results/**"]
+    },
+    "deploy": {
+      "dependsOn": ["build", "test"]
     },
     "dev": {
       "persistent": true,

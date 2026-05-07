@@ -7,3 +7,14 @@ minimumReleaseAge: 1440
 
 onlyBuiltDependencies:
   - lefthook
+
+catalogs:
+  react:
+    react: ^19
+    react-dom: ^19
+    "@types/react": ^19
+    "@types/react-dom": ^19
+    babel-plugin-react-compiler: ^1.0.0
+  tailwindcss:
+    tailwindcss: ^4.2
+    "@tailwindcss/vite": ^4.2
