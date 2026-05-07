@@ -28,7 +28,7 @@ jobs:
 
       - name: Install Playwright browsers
         run: |
-          pnpm exec playwright install
+          pnpx playwright install --with-deps
 
       - name: Code quality assurance
         run: |
