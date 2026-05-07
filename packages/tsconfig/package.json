@@ -1,8 +1,4 @@
 {
   "name": "@cyberowl-town/tsconfig",
-  "version": "1.0.0",
-  "exports": {
-    "react": "./react.json",
-    "node": "./typescript.json"
-  }
+  "version": "1.0.0"
 }
