@@ -1,0 +1,35 @@
+name: Sanity check
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - "*"
+
+jobs:
+  sanity-check:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v6
+        name: Install pnpm
+        with:
+          cache: true
+
+      - name: Install turborepo
+        run: |
+          pnpm add turbo --global
+
+      - name: Install dependencies
+        run: |
+          pnpm install
+
+      - name: Code quality assurance
+        run: |
+          turbo quality
+
+      - name: Run tests
+        run: |
+          turbo test
