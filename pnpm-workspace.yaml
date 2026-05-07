@@ -2,11 +2,17 @@ packages:
   - apps/**
   - packages/**
 
-blockExoticSubdeps: true
-minimumReleaseAge: 1440
+# v11 default those now.
+# https://pnpm.io/blog/releases/11.0#security--build-defaults
+#
+# blockExoticSubdeps: true
+# minimumReleaseAge: 1440
 
-onlyBuiltDependencies:
-  - lefthook
+allowBuilds:
+  esbuild: false
+  lefthook: true
+  sharp: false
+  workerd: false
 
 catalogs:
   react:
