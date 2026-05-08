@@ -7,7 +7,7 @@
       "dependsOn": ["^build"]
     },
     "test": {
-      "outputs": ["playwright-report/**", "test-results/**"],
+      "inputs": ["__tests__/**"],
       "dependsOn": ["build"]
     },
     "deploy": {
