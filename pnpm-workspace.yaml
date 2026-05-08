@@ -24,3 +24,11 @@ catalogs:
   tailwindcss:
     tailwindcss: ^4.2
     "@tailwindcss/vite": ^4.2
+
+supportedArchitectures:
+  cpu:
+    - current
+    - x64
+  os:
+    - current
+    - linux

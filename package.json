@@ -19,17 +19,5 @@
     "oxlint-tsgolint": "0.22.1",
     "turbo": "2.9.9"
   },
-  "packageManager": "pnpm@11.0.8",
-  "pnpm": {
-    "supportedArchitectures": {
-      "os": [
-        "current",
-        "linux"
-      ],
-      "cpu": [
-        "current",
-        "x64"
-      ]
-    }
-  }
+  "packageManager": "pnpm@11.0.8"
 }
