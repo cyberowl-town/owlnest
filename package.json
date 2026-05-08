@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "description": "Something InterNest template something.",
+  "license": "AGPL-3.0-or-later",
+  "author": "CyberOwl Town <cyberowltownmaster@gmail.com>",
   "scripts": {
     "prepare": "lefthook install --reset-hooks-path",
     "lint": "oxlint . --no-error-on-unmatched-pattern",
@@ -18,5 +20,16 @@
     "turbo": "2.9.9"
   },
   "packageManager": "pnpm@11.0.8",
-  "authors": []
+  "pnpm": {
+    "supportedArchitectures": {
+      "os": [
+        "current",
+        "linux"
+      ],
+      "cpu": [
+        "current",
+        "x64"
+      ]
+    }
+  }
 }
