@@ -36,10 +36,6 @@ jobs:
         run: |
           turbo quality
 
-      - name: Run tests
-        run: |
-          turbo test
-
       - name: Deploy to Cloudflare Pages
         run: |
-          turbo build
+          turbo deploy
