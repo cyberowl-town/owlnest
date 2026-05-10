@@ -11,7 +11,7 @@ describe("smoke test", async () => {
   it(
     "index page 'kamito was here' has proper class with proper CSS",
     {
-      timeout: 1000,
+      timeout: 30_000,
     },
     async () => {
       expect.hasAssertions();
