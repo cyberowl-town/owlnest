@@ -1,5 +1,6 @@
 {
   "$schema": "https://turborepo.dev/schema.json",
+  "globalPassThroughEnv": ["CLOUDFLARE_*"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
