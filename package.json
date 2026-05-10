@@ -14,9 +14,9 @@
   },
   "devDependencies": {
     "lefthook": "2.1.6",
-    "oxfmt": "0.48.0",
-    "oxlint": "1.63.0",
-    "oxlint-tsgolint": "0.22.1",
+    "oxfmt": "catalog:oxc",
+    "oxlint": "catalog:oxc",
+    "oxlint-tsgolint": "catalog:oxc",
     "turbo": "2.9.9"
   },
   "packageManager": "pnpm@11.0.8"
