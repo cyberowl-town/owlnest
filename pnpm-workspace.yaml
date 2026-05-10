@@ -27,8 +27,8 @@ catalogs:
     "@types/react-dom": ^19
     babel-plugin-react-compiler: ^1.0.0
   tailwindcss:
-    tailwindcss: ^4.2
-    "@tailwindcss/vite": ^4.2
+    tailwindcss: ^4.3
+    "@tailwindcss/vite": ^4.3
 
 supportedArchitectures:
   cpu:
