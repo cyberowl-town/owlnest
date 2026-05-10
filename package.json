@@ -19,5 +19,8 @@
     "oxlint-tsgolint": "catalog:oxc",
     "turbo": "2.9.9"
   },
+  "engines": {
+    "node": "^22 || ^24 || >=25"
+  },
   "packageManager": "pnpm@11.0.8"
 }
