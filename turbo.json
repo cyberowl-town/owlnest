@@ -1,16 +1,17 @@
 {
   "$schema": "https://turborepo.dev/schema.json",
-  "globalPassThroughEnv": ["PLAYWRIGHT_*"],
   "tasks": {
     "build": {
-      "outputs": ["dist/**"],
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".nuxt/**", ".output/**", "dist/**"]
     },
     "test": {
-      "inputs": ["__tests__/**"],
-      "dependsOn": ["build"]
+      "inputs": ["$TURBO_DEFAULT$", "__tests__/**/*.test.ts"],
+      "dependsOn": ["^test"]
     },
     "deploy": {
+      "inputs": ["$TURBO_DEFAULT$", "dist/**"],
       "dependsOn": ["build", "test"]
     },
     "dev": {

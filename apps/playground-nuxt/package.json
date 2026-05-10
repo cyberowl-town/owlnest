@@ -1,0 +1,29 @@
+{
+  "name": "playground-nuxt",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build --preset=cloudflare_pages",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "wrangler pages dev dist",
+    "postinstall": "nuxt prepare",
+    "deploy": "wrangler pages deploy dist --project-name swyrin-nuxt-playground",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@nuxt/fonts": "^0.14.0",
+    "nuxt": "^4.4.4",
+    "vue": "^3.5.33",
+    "vue-router": "^5.0.6"
+  },
+  "devDependencies": {
+    "@nuxt/test-utils": "^4.0.3",
+    "@tailwindcss/vite": "catalog:tailwindcss",
+    "happy-dom": "^20.9.0",
+    "playwright-core": "^1.59.1",
+    "tailwindcss": "catalog:tailwindcss",
+    "vitest": "^4.1.5",
+    "wrangler": "4.90.0"
+  }
+}

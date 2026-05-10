@@ -1,5 +1,9 @@
 packages:
   - apps/**
+  # for some reason, Turborepo/pnpm picks this up
+  # and refuses to go further /shrug
+  - "!apps/**/.output/**"
+  - "!apps/**/.nuxt/**"
   - packages/**
 
 # v11 default those now.
@@ -9,9 +13,11 @@ packages:
 # minimumReleaseAge: 1440
 
 allowBuilds:
+  "@parcel/watcher": false
   esbuild: false
   lefthook: true
   sharp: false
+  vue-demi: false
   workerd: false
 
 catalogs:
@@ -26,6 +32,7 @@ catalogs:
     "@types/react": ^19
     "@types/react-dom": ^19
     babel-plugin-react-compiler: ^1.0.0
+
   tailwindcss:
     tailwindcss: ^4.3
     "@tailwindcss/vite": ^4.3

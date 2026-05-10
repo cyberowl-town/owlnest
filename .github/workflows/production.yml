@@ -1,11 +1,13 @@
-name: Sanity check
+name: To production, and beyond!
 on:
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:
   push:
     branches:
-      - "*"
+      - main
+
+env:
+  CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+  CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
 jobs:
   sanity-check:
@@ -37,3 +39,7 @@ jobs:
       - name: Run tests
         run: |
           turbo test
+
+      - name: Deploy to Cloudflare Pages
+        run: |
+          turbo build

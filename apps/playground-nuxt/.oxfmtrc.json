@@ -1,8 +1,7 @@
 {
   "$schema": "../../node_modules/oxfmt/configuration_schema.json",
   "sortTailwindcss": {
-    "stylesheet": "src/routes/globals.css",
+    "stylesheet": "app/assets/css/tailwind.css",
     "functions": ["clsx", "cn", "cva"]
-  },
-  "ignorePatterns": ["src/routeTree.gen.ts"]
+  }
 }

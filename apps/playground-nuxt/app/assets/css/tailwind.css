@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: "Red Hat Display", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
