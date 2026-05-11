@@ -44,11 +44,15 @@ jobs:
 
       - name: Install Playwright browsers
         run: |
-          pnpx playwright install
+          pnpx playwright install --with-deps
 
       - name: Code quality assurance
         run: |
           turbo quality
+
+      - name: Test
+        run: |
+          turbo test
 
       - name: Deploy to Cloudflare Pages
         run: |
