@@ -14,7 +14,7 @@ packages:
 
 allowBuilds:
   "@parcel/watcher": false
-  esbuild: false
+  esbuild: true
   lefthook: true
   sharp: false
   vue-demi: false

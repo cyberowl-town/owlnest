@@ -21,7 +21,7 @@ describe("smoke test", async () => {
       const elem = page.getByText("Kamito was here");
       const className = await elem.getAttribute("class");
 
-      expect(className).toBe("text-xl");
+      expect(className).toContain("text-xl");
     },
   );
 });

@@ -1,6 +1,8 @@
 @import "tailwindcss";
+@import "@nuxt/ui";
 
 :root {
-  --font-sans: "Red Hat Display", sans-serif;
+  --ui-radius: 0rem;
+  --font-sans: "Public Sans", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
